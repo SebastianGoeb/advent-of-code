@@ -10,7 +10,6 @@
 |-----|------------------------|
 | 1   | cargo watch, itertools |
 
-
 ## Tools / Libraries to check out
 
 - Bacon / Cargo Watch
@@ -32,3 +31,4 @@
 - clippy + pedantic, nursery, unwrap_used, expect_used
 - log
 - TODO more
+- better testing?
