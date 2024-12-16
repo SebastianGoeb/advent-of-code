@@ -2,7 +2,12 @@ use itertools::Itertools;
 use std::collections::HashMap;
 use std::fs;
 
-pub fn part_1() {
+pub fn run() {
+    part_1();
+    part_2();
+}
+
+fn part_1() {
     let string = fs::read_to_string("data/2024/1/part_1_big.txt")
         .expect("Should have been able to read the file");
 
@@ -14,14 +19,14 @@ pub fn part_1() {
 
     let sum_of_differences: i32 = sorted_pairs.map(|(a, b)| (a - b).abs()).sum();
 
-    print!(
+    println!(
         "Day 1 Part 1
     total distance between lists: {}",
         sum_of_differences
     );
 }
 
-pub fn part_2() {
+fn part_2() {
     let string = fs::read_to_string("data/2024/1/part_1_big.txt")
         .expect("Should have been able to read the file");
 
@@ -33,7 +38,7 @@ pub fn part_2() {
         .map(|l| l * *right_counts.get(&l).unwrap_or(&0) as i32)
         .sum();
 
-    print!(
+    println!(
         "Day 1 Part 2
     similarity score: {}",
         similarity_score
