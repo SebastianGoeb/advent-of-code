@@ -9,6 +9,7 @@
 | Day | Tool(s)                |
 |-----|------------------------|
 | 1   | cargo watch, itertools |
+| 2   | clap (derive)          |
 
 ## Tools / Libraries to check out
 
@@ -23,7 +24,6 @@
 - Rayon
 - aws-sdk-rust
 - clap
-    - clap app macro
 - sqlx
 - chrono
 - egui

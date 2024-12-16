@@ -2,7 +2,12 @@ use itertools::Itertools;
 use std::collections::HashMap;
 use std::fs;
 
-pub fn part_1() {
+pub fn run() {
+    part_1();
+    part_2();
+}
+
+fn part_1() {
     let string = fs::read_to_string("data/2024/1/part_1_big.txt")
         .expect("Should have been able to read the file");
 
@@ -21,7 +26,7 @@ pub fn part_1() {
     );
 }
 
-pub fn part_2() {
+fn part_2() {
     let string = fs::read_to_string("data/2024/1/part_1_big.txt")
         .expect("Should have been able to read the file");
 
